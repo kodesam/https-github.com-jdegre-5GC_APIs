@@ -1445,11 +1445,11 @@ components:
         - mnc
       properties:
         mcc:
-          $ref: '#/components/schemas/Mcc'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Mcc'
         mnc:
-          $ref: '#/components/schemas/Mnc'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Mnc'
         nid:
-          $ref: '#/components/schemas/Nid'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Nid'
     SmallDataRateStatus:
       type: object
       properties:
