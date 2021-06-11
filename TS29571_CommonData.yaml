@@ -986,9 +986,9 @@ components:
       type: object
       properties:
         mcc:
-          $ref: '#/components/schemas/Mcc'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Mcc'
         mnc:
-          $ref: '#/components/schemas/Mnc'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Mnc'
       required:
         - mcc
         - mnc
