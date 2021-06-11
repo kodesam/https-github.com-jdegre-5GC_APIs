@@ -24,7 +24,7 @@ The links below will open the Swagger Editor (v3.6.23) and auto-load the OpenAPI
 
 <!-- APIs -->
 ## NRF (NF Repository Function)
-* [NF Management](https://jdegre.github.io/loader.html?yaml=TS29510_Nnrf_NFManagement.yaml)
+* [NF Management](https://editor.swagger.io?url=https://raw.githubusercontent.com/jdegre/5GC_APIs/test/TS29510_Nnrf_NFManagement.yaml)
 * [NF Discovery](https://jdegre.github.io/loader.html?yaml=TS29510_Nnrf_NFDiscovery.yaml)
 * [Access Token (OAuth2)](https://jdegre.github.io/loader.html?yaml=TS29510_Nnrf_AccessToken.yaml)
 * [Bootstrapping](https://jdegre.github.io/loader.html?yaml=TS29510_Nnrf_Bootstrapping.yaml)
