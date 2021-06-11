@@ -273,7 +273,7 @@ components:
       type: object
       properties:
         type:
-          $ref: '#/components/schemas/Uri'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uri'
         title:
           type: string
         status:
@@ -281,18 +281,18 @@ components:
         detail:
           type: string
         instance:
-          $ref: '#/components/schemas/Uri'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uri'
         cause:
           type: string
         invalidParams:
           type: array
           items:
-            $ref: '#/components/schemas/InvalidParam'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/InvalidParam'
           minItems: 1
         supportedFeatures:
-          $ref: '#/components/schemas/SupportedFeatures'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/SupportedFeatures'
         targetScp:
-          $ref: '#/components/schemas/Uri'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uri'
         accessTokenError:
           $ref: 'TS29510_Nnrf_AccessToken.yaml#/components/schemas/AccessTokenErr'
         accessTokenRequest:
@@ -303,18 +303,18 @@ components:
       type: object
       properties:
         href:
-          $ref: '#/components/schemas/Uri'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uri'
     LinkRm:
       type: object
       properties:
         href:
-          $ref: '#/components/schemas/Uri'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uri'
       nullable: true
     PatchItem:
       type: object
       properties:
         op:
-          $ref: '#/components/schemas/PatchOperation'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PatchOperation'
         path:
           type: string
         from:
@@ -327,14 +327,14 @@ components:
       oneOf:
         - type: array
           items:
-            $ref: '#/components/schemas/Link'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Link'
           minItems: 1
-        - $ref: '#/components/schemas/Link'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Link'
     SelfLink:
       type: object
       properties:
         self:
-          $ref: '#/components/schemas/Link'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Link'
       required:
         - self
     InvalidParam:
@@ -350,7 +350,7 @@ components:
       type: object
       properties:
         op:
-          $ref: '#/components/schemas/ChangeType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ChangeType'
         path:
           type: string
         from:
@@ -367,16 +367,16 @@ components:
         - changes
       properties:
         resourceId:
-          $ref: '#/components/schemas/Uri'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uri'
         changes:
           type: array
           items:
-            $ref: '#/components/schemas/ChangeItem'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ChangeItem'
           minItems: 1
     ComplexQuery:
       oneOf:
-        - $ref: '#/components/schemas/Cnf'
-        - $ref: '#/components/schemas/Dnf'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Cnf'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Dnf'
     Cnf:
       type: object
       required:
@@ -385,7 +385,7 @@ components:
         cnfUnits:
           type: array
           items:
-            $ref: '#/components/schemas/CnfUnit'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/CnfUnit'
           minItems: 1
     Dnf:
       type: object
@@ -395,7 +395,7 @@ components:
         dnfUnits:
           type: array
           items:
-            $ref: '#/components/schemas/DnfUnit'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/DnfUnit'
           minItems: 1
     CnfUnit:
       type: object
@@ -405,7 +405,7 @@ components:
         cnfUnit:
           type: array
           items:
-            $ref: '#/components/schemas/Atom'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Atom'
           minItems: 1
     DnfUnit:
       type: object
@@ -415,7 +415,7 @@ components:
         dnfUnit:
           type: array
           items:
-            $ref: '#/components/schemas/Atom'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Atom'
           minItems: 1
     Atom:
       type: object
@@ -436,7 +436,7 @@ components:
        report:
         type: array
         items:
-          $ref: '#/components/schemas/ReportItem'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ReportItem'
         minItems: 1
     ReportItem:
       type: object
@@ -455,13 +455,13 @@ components:
         title:
           type: string
         method:
-          $ref: '#/components/schemas/HttpMethod'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/HttpMethod'
         contentType:
           type: string
         properties:
           type: array
           items:
-            $ref: '#/components/schemas/Property'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Property'
           minItems: 1
     Property:
       type: object
@@ -649,7 +649,7 @@ components:
       type: string
       nullable: true
     5GMmCause:
-      $ref: '#/components/schemas/Uinteger'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
     AmfName:
       type: string
     AreaCode:
@@ -681,9 +681,9 @@ components:
     NfServiceSetId:
       type: string
     PlmnAssiUeRadioCapId:
-      $ref: '#/components/schemas/Bytes'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Bytes'
     ManAssiUeRadioCapId:
-      $ref: '#/components/schemas/Bytes'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Bytes'
     TypeAllocationCode:
       type: string
       pattern: '^[0-9]{8}$'
@@ -698,7 +698,7 @@ components:
       type: string
       pattern: '^(MacroeNB-[A-Fa-f0-9]{5}|LMacroeNB-[A-Fa-f0-9]{6}|SMacroeNB-[A-Fa-f0-9]{5}|HomeeNB-[A-Fa-f0-9]{7})$'
     Gli:
-      $ref: '#/components/schemas/Bytes'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Bytes'
     Gci:
       type: string
 
@@ -808,8 +808,8 @@ components:
         - LATE: Late notification of UP path reconfiguration.
     DnaiChangeTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/DnaiChangeType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/DnaiChangeType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     RestrictionType:
       anyOf:
         - type: string
@@ -819,8 +819,8 @@ components:
         - type: string
     RestrictionTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/RestrictionType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/RestrictionType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     CoreNetworkType:
       anyOf:
         - type: string
@@ -830,8 +830,8 @@ components:
         - type: string
     CoreNetworkTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/CoreNetworkType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/CoreNetworkType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     PresenceState:
       anyOf:
         - type: string
@@ -858,8 +858,8 @@ components:
         - MOBILE: Identifies the UE is mobile
     StationaryIndicationRm:
       anyOf:
-        - $ref: '#/components/schemas/StationaryIndication'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/StationaryIndication'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     ScheduledCommunicationType:
       anyOf:
         - type: string
@@ -894,8 +894,8 @@ components:
         - DUAL_TRANS_DL_FIRST: Dual packet transmission, firstly downlink packet transmission with subsequent uplink packet transmission.
     TrafficProfileRm:
       anyOf:
-        - $ref: '#/components/schemas/TrafficProfile'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/TrafficProfile'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     LcsServiceAuth:
       anyOf:
       - type: string
@@ -945,8 +945,8 @@ components:
         - DISCARDED: The first downlink data matching the source of the downlink traffic is discarded because the Extended Buffering time, as determined by the SMF, expires or the amount of downlink data to be buffered is exceeded.
     DlDataDeliveryStatusRm:
       anyOf:
-        - $ref: '#/components/schemas/DlDataDeliveryStatus'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/DlDataDeliveryStatus'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     AuthStatus:
       anyOf:
       - type: string
@@ -1069,7 +1069,7 @@ components:
           minimum: 0
           maximum: 32767
         ueLocationTimestamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         geographicalInformation:
           type: string
           pattern: '^[0-9A-F]{16}$'
@@ -1119,49 +1119,49 @@ components:
       type: object
       properties:
         n3gppTai:
-          $ref: '#/components/schemas/Tai'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Tai'
         n3IwfId:
           type: string
           pattern: '^[A-Fa-f0-9]+$'
         ueIpv4Addr:
-          $ref: '#/components/schemas/Ipv4Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv4Addr'
         ueIpv6Addr:
-          $ref: '#/components/schemas/Ipv6Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv6Addr'
         portNumber:
-          $ref: '#/components/schemas/Uinteger'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
         tnapId:
-          $ref: '#/components/schemas/TnapId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/TnapId'
         twapId:
-          $ref: '#/components/schemas/TwapId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/TwapId'
         hfcNodeId:
-          $ref: '#/components/schemas/HfcNodeId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/HfcNodeId'
         gli:
-          $ref: '#/components/schemas/Gli'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Gli'
         w5gbanLineType:
-          $ref: '#/components/schemas/LineType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/LineType'
         gci:
-          $ref: '#/components/schemas/Gci'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Gci'
     UpSecurity:
       type: object
       properties:
         upIntegr:
-          $ref: '#/components/schemas/UpIntegrity'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/UpIntegrity'
         upConfid:
-          $ref: '#/components/schemas/UpConfidentiality'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/UpConfidentiality'
       required:
         - upIntegr
         - upConfid
     UpSecurityRm:
      anyOf:
-        - $ref: '#/components/schemas/UpSecurity'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/UpSecurity'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     NgApCause:
       type: object
       properties:
         group:
-          $ref: '#/components/schemas/Uinteger'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
         value:
-          $ref: '#/components/schemas/Uinteger'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
       required:
         - group
         - value
@@ -1169,11 +1169,11 @@ components:
       type: object
       properties:
         backupAmf:
-          $ref: '#/components/schemas/AmfName'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AmfName'
         guamiList:
           type: array
           items:
-            $ref: '#/components/schemas/Guami'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Guami'
           minItems: 1
       required:
         - backupAmf
@@ -1743,7 +1743,7 @@ components:
         bssId:
           type: string
         civicAddress:
-          $ref: '#/components/schemas/Bytes'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Bytes'
     TnapIdRm:
       anyOf:
         - $ref: 'TS29571_CommonData.yaml#/components/schemas/TnapId'
@@ -1790,7 +1790,7 @@ components:
         sdRanges:
           type: array
           items:
-            $ref: '#/components/schemas/SdRange'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/SdRange'
           minItems: 1
         wildcardSd:
           type: boolean
@@ -1921,7 +1921,7 @@ components:
       maximum: 100
       nullable: true
     RgWirelineCharacteristics:
-      $ref: '#/components/schemas/Bytes'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Bytes'
     RgWirelineCharacteristicsRm:
       anyOf:
         - $ref: 'TS29571_CommonData.yaml#/components/schemas/RgWirelineCharacteristics'
@@ -1956,8 +1956,8 @@ components:
         - type: string
     PreemptionCapabilityRm:
       anyOf:
-        - $ref: '#/components/schemas/PreemptionCapability'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/PreemptionCapability'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     PreemptionVulnerability:
       anyOf:
         - type: string
@@ -2125,8 +2125,8 @@ components:
         - type: string
     TraceDepthRm:
       anyOf:
-        - $ref: '#/components/schemas/TraceDepth'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/TraceDepth'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     JobType:
       anyOf:
         - type: string
@@ -2364,7 +2364,7 @@ components:
           type: string
           pattern: '^[0-9]{3}[0-9]{2,3}-[A-Fa-f0-9]{6}$'
         traceDepth:
-          $ref: '#/components/schemas/TraceDepth'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/TraceDepth'
         neTypeList:
           type: string
           pattern: '^[A-Fa-f0-9]+$'
@@ -2566,7 +2566,7 @@ components:
                 - ROAMER_ACCESS_HPLMN_AP
                 - ROAMER_ACCESS_VPLMN_AP
             - type: string
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
 
 #
 # STRUCTURED DATA TYPES
@@ -2610,7 +2610,7 @@ components:
       type: object
       properties:
         secondaryRatType:
-          $ref: '#/components/schemas/RatType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/RatType'
         qosFlowsUsageData:
           type: array
           items:
