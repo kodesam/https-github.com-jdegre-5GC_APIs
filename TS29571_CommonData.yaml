@@ -573,23 +573,23 @@ components:
       type: object
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnIdNid'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnIdNid'
         amfId:
-          $ref: '#/components/schemas/AmfId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AmfId'
       required:
         - plmnId
         - amfId
     GuamiRm:
       anyOf:
-        - $ref: '#/components/schemas/Guami'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Guami'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     NetworkId:
       type: object
       properties:
         mnc:
-          $ref: '#/components/schemas/Mnc'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Mnc'
         mcc:
-          $ref: '#/components/schemas/Mcc'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Mcc'
 
 
 #
@@ -713,8 +713,8 @@ components:
         - NON_3GPP_ACCESS
     AccessTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/AccessType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/AccessType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     RatType:
       anyOf:
         - type: string
@@ -737,8 +737,8 @@ components:
         - type: string
     RatTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/RatType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/RatType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     PduSessionType:
       anyOf:
         - type: string
@@ -751,8 +751,8 @@ components:
         - type: string
     PduSessionTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/PduSessionType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/PduSessionType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     UpIntegrity:
       anyOf:
         - type: string
@@ -763,8 +763,8 @@ components:
         - type: string
     UpIntegrityRm:
       anyOf:
-        - $ref: '#/components/schemas/UpIntegrity'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/UpIntegrity'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     UpConfidentiality:
       anyOf:
         - type: string
@@ -775,8 +775,8 @@ components:
         - type: string
     UpConfidentialityRm:
       anyOf:
-        - $ref: '#/components/schemas/UpConfidentiality'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/UpConfidentiality'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     SscMode:
       anyOf:
         - type: string
@@ -787,8 +787,8 @@ components:
         - type: string
     SscModeRm:
       anyOf:
-        - $ref: '#/components/schemas/SscMode'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/SscMode'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     DnaiChangeType:
       anyOf:
       - type: string
@@ -870,8 +870,8 @@ components:
         - type: string
     ScheduledCommunicationTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/ScheduledCommunicationType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/ScheduledCommunicationType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     TrafficProfile:
       anyOf:
       - type: string
@@ -994,73 +994,73 @@ components:
         - mnc
     PlmnIdRm:
       anyOf:
-        - $ref: '#/components/schemas/PlmnId'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     Tai:
       type: object
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
         tac:
-          $ref: '#/components/schemas/Tac'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Tac'
         nid:
-          $ref: '#/components/schemas/Nid'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Nid'
       required:
         - plmnId
         - tac
     TaiRm:
       anyOf:
-        - $ref: '#/components/schemas/Tai'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Tai'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     Ecgi:
       type: object
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
           # PLMN Identity
         eutraCellId:
-          $ref: '#/components/schemas/EutraCellId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/EutraCellId'
         nid:
-          $ref: '#/components/schemas/Nid'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Nid'
       required:
         - plmnId
         - eutraCellId
     EcgiRm:
       anyOf:
-        - $ref: '#/components/schemas/Ecgi'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Ecgi'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     Ncgi:
       type: object
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
         nrCellId:
-          $ref: '#/components/schemas/NrCellId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/NrCellId'
         nid:
-          $ref: '#/components/schemas/Nid'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Nid'
       required:
         - plmnId
         - nrCellId
     NcgiRm:
       anyOf:
-        - $ref: '#/components/schemas/Ncgi'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Ncgi'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     UserLocation:
       type: object
       properties:
         eutraLocation:
-          $ref: '#/components/schemas/EutraLocation'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/EutraLocation'
         nrLocation:
-          $ref: '#/components/schemas/NrLocation'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/NrLocation'
         n3gaLocation:
-          $ref: '#/components/schemas/N3gaLocation'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/N3gaLocation'
     EutraLocation:
       type: object
       properties:
         tai:
-          $ref: '#/components/schemas/Tai'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Tai'
         ecgi:
-          $ref: '#/components/schemas/Ecgi'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ecgi'
         ignoreEcgi:
           type: boolean
           default: false
@@ -1077,29 +1077,29 @@ components:
           type: string
           pattern: '^[0-9A-F]{20}$'
         globalNgenbId:
-          $ref: '#/components/schemas/GlobalRanNodeId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/GlobalRanNodeId'
         globalENbId:
-          $ref: '#/components/schemas/GlobalRanNodeId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/GlobalRanNodeId'
       required:
         - tai
         - ecgi
     EutraLocationRm:
       anyOf:
-        - $ref: '#/components/schemas/EutraLocation'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/EutraLocation'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     NrLocation:
       type: object
       properties:
         tai:
-          $ref: '#/components/schemas/Tai'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Tai'
         ncgi:
-          $ref: '#/components/schemas/Ncgi'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ncgi'
         ageOfLocationInformation:
           type: integer
           minimum: 0
           maximum: 32767
         ueLocationTimestamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         geographicalInformation:
           type: string
           pattern: '^[0-9A-F]{16}$'
@@ -1107,14 +1107,14 @@ components:
           type: string
           pattern: '^[0-9A-F]{20}$'
         globalGnbId:
-          $ref: '#/components/schemas/GlobalRanNodeId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/GlobalRanNodeId'
       required:
         - tai
         - ncgi
     NrLocationRm:
      anyOf:
-        - $ref: '#/components/schemas/NrLocation'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NrLocation'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     N3gaLocation:
       type: object
       properties:
@@ -1186,15 +1186,15 @@ components:
         - contentId
     RefToBinaryDataRm:
      anyOf:
-        - $ref: '#/components/schemas/RefToBinaryData'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/RefToBinaryData'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     RouteToLocation:
       type: object
       properties:
         dnai:
-          $ref: '#/components/schemas/Dnai'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Dnai'
         routeInfo:
-          $ref: '#/components/schemas/RouteInformation'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/RouteInformation'
         routeProfId:
           type: string
           nullable: true
@@ -1208,11 +1208,11 @@ components:
       type: object
       properties:
         ipv4Addr:
-          $ref: '#/components/schemas/Ipv4Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv4Addr'
         ipv6Addr:
-          $ref: '#/components/schemas/Ipv6Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv6Addr'
         portNumber:
-          $ref: '#/components/schemas/Uinteger'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
       required:
         - portNumber
       nullable: true
@@ -1223,11 +1223,11 @@ components:
         - arp
       properties:
         5qi:
-          $ref: '#/components/schemas/5Qi'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/5Qi'
         arp:
-          $ref: '#/components/schemas/Arp'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Arp'
         priorityLevel:
-          $ref: '#/components/schemas/5QiPriorityLevel'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/5QiPriorityLevel'
     Area:
       type: object
       oneOf:
@@ -1239,23 +1239,23 @@ components:
         tacs:
           type: array
           items:
-            $ref: '#/components/schemas/Tac'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Tac'
           minItems: 1
         areaCode:
-            $ref: '#/components/schemas/AreaCode'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/AreaCode'
     ServiceAreaRestriction:
       type: object
       properties:
         restrictionType:
-          $ref: '#/components/schemas/RestrictionType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/RestrictionType'
         areas:
           type: array
           items:
-            $ref: '#/components/schemas/Area'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Area'
         maxNumOfTAs:
-          $ref: '#/components/schemas/Uinteger'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
         maxNumOfTAsForNotAllowedAreas:
-          $ref: '#/components/schemas/Uinteger'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
       allOf:
         #
         # 1st condition: restrictionType and areas attributes shall be either both absent
@@ -1297,26 +1297,26 @@ components:
         globalLineIds:
           type: array
           items:
-            $ref: '#/components/schemas/Gli'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Gli'
           minItems: 1
         hfcNIds:
           type: array
           items:
-            $ref: '#/components/schemas/HfcNId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/HfcNId'
           minItems: 1
         areaCodeB:
-          $ref: '#/components/schemas/AreaCode'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AreaCode'
         areaCodeC:
-          $ref: '#/components/schemas/AreaCode'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AreaCode'
     WirelineServiceAreaRestriction:
       type: object
       properties:
         restrictionType:
-          $ref: '#/components/schemas/RestrictionType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/RestrictionType'
         areas:
           type: array
           items:
-            $ref: '#/components/schemas/WirelineArea'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/WirelineArea'
     PresenceInfo:
       type: object
       properties:
@@ -1325,31 +1325,31 @@ components:
         additionalPraId:
           type: string
         presenceState:
-          $ref: '#/components/schemas/PresenceState'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PresenceState'
         trackingAreaList:
           type: array
           items:
-            $ref: '#/components/schemas/Tai'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Tai'
           minItems: 1
         ecgiList:
           type: array
           items:
-            $ref: '#/components/schemas/Ecgi'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Ecgi'
           minItems: 1
         ncgiList:
           type: array
           items:
-            $ref: '#/components/schemas/Ncgi'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Ncgi'
           minItems: 1
         globalRanNodeIdList:
           type: array
           items:
-            $ref: '#/components/schemas/GlobalRanNodeId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/GlobalRanNodeId'
           minItems: 1
         globaleNbIdList:
           type: array
           items:
-            $ref: '#/components/schemas/GlobalRanNodeId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/GlobalRanNodeId'
           minItems: 1
     PresenceInfoRm:
       type: object
@@ -1359,51 +1359,51 @@ components:
         additionalPraId:
           type: string
         presenceState:
-          $ref: '#/components/schemas/PresenceState'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PresenceState'
         trackingAreaList:
           type: array
           items:
-            $ref: '#/components/schemas/Tai'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Tai'
           minItems: 0
         ecgiList:
           type: array
           items:
-            $ref: '#/components/schemas/Ecgi'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Ecgi'
           minItems: 0
         ncgiList:
           type: array
           items:
-            $ref: '#/components/schemas/Ncgi'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Ncgi'
           minItems: 0
         globalRanNodeIdList:
           type: array
           items:
-            $ref: '#/components/schemas/GlobalRanNodeId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/GlobalRanNodeId'
         globaleNbIdList:
           type: array
           items:
-            $ref: '#/components/schemas/GlobalRanNodeId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/GlobalRanNodeId'
           minItems: 1
       nullable: true
     GlobalRanNodeId:
       type: object
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
         n3IwfId:
-          $ref: '#/components/schemas/N3IwfId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/N3IwfId'
         gNbId:
-          $ref: '#/components/schemas/GNbId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/GNbId'
         ngeNbId:
-          $ref: '#/components/schemas/NgeNbId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/NgeNbId'
         wagfId:
-          $ref: '#/components/schemas/WAgfId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/WAgfId'
         tngfId:
-          $ref: '#/components/schemas/TngfId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/TngfId'
         nid:
-          $ref: '#/components/schemas/Nid'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Nid'
         eNbId:
-          $ref: '#/components/schemas/ENbId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ENbId'
       oneOf:
         - required: [ n3IwfId ]
         - required: [ gNbId ]
@@ -1460,7 +1460,7 @@ components:
           type: integer
           minimum: 0
         validityTime:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         remainExReportsUl:
           type: integer
           minimum: 0
@@ -1477,7 +1477,7 @@ components:
           type: integer
           minimum: 0
         validityTime:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         remainExReportsUl:
           type: integer
           minimum: 0
@@ -1490,29 +1490,29 @@ components:
         - hfcNId
       properties:
         hfcNId:
-          $ref: '#/components/schemas/HfcNId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/HfcNId'
     HfcNodeIdRm:
      anyOf:
-        - $ref: '#/components/schemas/HfcNodeId'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/HfcNodeId'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     ScheduledCommunicationTime:
       type: object
       properties:
         daysOfWeek:
           type: array
           items:
-            $ref: '#/components/schemas/DayOfWeek'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/DayOfWeek'
           minItems: 1
           maxItems: 6
           description: Identifies the day(s) of the week. If absent, it indicates every day of the week.
         timeOfDayStart:
-          $ref: '#/components/schemas/TimeOfDay'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/TimeOfDay'
         timeOfDayEnd:
-          $ref: '#/components/schemas/TimeOfDay'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/TimeOfDay'
     ScheduledCommunicationTimeRm:
       anyOf:
-        - $ref: '#/components/schemas/ScheduledCommunicationTime'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/ScheduledCommunicationTime'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     BatteryIndication:
       type: object
       properties:
@@ -1524,35 +1524,35 @@ components:
           type: boolean
     BatteryIndicationRm:
       anyOf:
-        - $ref: '#/components/schemas/BatteryIndication'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/BatteryIndication'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     AcsInfo:
       type: object
       properties:
         acsUrl:
-          $ref: '#/components/schemas/Uri'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uri'
         acsIpv4Addr:
-          $ref: '#/components/schemas/Ipv4Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv4Addr'
         acsIpv6Addr:
-          $ref: '#/components/schemas/Ipv6Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv6Addr'
     AcsInfoRm:
       anyOf:
-        - $ref: '#/components/schemas/AcsInfo'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/AcsInfo'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     NrV2xAuth:
       type: object
       properties:
         vehicleUeAuth:
-          $ref: '#/components/schemas/UeAuth'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/UeAuth'
         pedestrianUeAuth:
-          $ref: '#/components/schemas/UeAuth'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/UeAuth'
     LteV2xAuth:
       type: object
       properties:
         vehicleUeAuth:
-          $ref: '#/components/schemas/UeAuth'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/UeAuth'
         pedestrianUeAuth:
-          $ref: '#/components/schemas/UeAuth'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/UeAuth'
     Pc5QoSPara:
       type: object
       required:
@@ -1561,27 +1561,27 @@ components:
         pc5QosFlowList:
           type: array
           items:
-            $ref: '#/components/schemas/Pc5QosFlowItem'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Pc5QosFlowItem'
         pc5LinkAmbr:
-          $ref: '#/components/schemas/BitRate'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/BitRate'
     Pc5QosFlowItem:
       type: object
       required:
         - pqi
       properties:
         pqi:
-          $ref: '#/components/schemas/5Qi'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/5Qi'
         pc5FlowBitRates:
-          $ref: '#/components/schemas/Pc5FlowBitRates'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Pc5FlowBitRates'
         range:
-          $ref: '#/components/schemas/Uinteger'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Uinteger'
     Pc5FlowBitRates:
       type: object
       properties:
         guaFbr:
-          $ref: '#/components/schemas/BitRate'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/BitRate'
         maxFbr:
-          $ref: '#/components/schemas/BitRate'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/BitRate'
     UtraLocation:
       type: object
       oneOf:
@@ -1593,19 +1593,19 @@ components:
           - rai
       properties:
         cgi:
-          $ref: '#/components/schemas/CellGlobalId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/CellGlobalId'
         sai:
-          $ref: '#/components/schemas/ServiceAreaId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ServiceAreaId'
         lai:
-          $ref: '#/components/schemas/LocationAreaId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/LocationAreaId'
         rai:
-          $ref: '#/components/schemas/RoutingAreaId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/RoutingAreaId'
         ageOfLocationInformation:
           type: integer
           minimum: 0
           maximum: 32767
         ueLocationTimestamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         geographicalInformation:
           type: string
           pattern: '^[0-9A-F]{16}$'
@@ -1625,11 +1625,11 @@ components:
         locationNumber:
           type: string
         cgi:
-          $ref: '#/components/schemas/CellGlobalId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/CellGlobalId'
         sai:
-          $ref: '#/components/schemas/ServiceAreaId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ServiceAreaId'
         lai:
-          $ref: '#/components/schemas/LocationAreaId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/LocationAreaId'
         vlrNumber:
           type: string
         mscNumber:
@@ -1639,7 +1639,7 @@ components:
           minimum: 0
           maximum: 32767
         ueLocationTimestamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         geographicalInformation:
           type: string
           pattern: '^[0-9A-F]{16}$'
@@ -1654,7 +1654,7 @@ components:
         - cellId
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
         lac:
           type: string
         cellId:
@@ -1668,7 +1668,7 @@ components:
         - sac
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
         lac:
           type: string
           pattern: '^[A-Fa-f0-9]$'
@@ -1682,7 +1682,7 @@ components:
         - lac
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
         lac:
           type: string
           pattern: '^[A-Fa-f0-9]$'
@@ -1694,7 +1694,7 @@ components:
         - rac
       properties:
         plmnId:
-          $ref: '#/components/schemas/PlmnId'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
         lac:
           type: string
           pattern: '^[A-Fa-f0-9]$'
@@ -1720,7 +1720,7 @@ components:
         counter:
           type: integer
         timeStamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
     NssaaStatus:
       type: object
       required:
@@ -1728,13 +1728,13 @@ components:
         - status
       properties:
         snssai:
-          $ref: '#/components/schemas/Snssai'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Snssai'
         status:
-          $ref: '#/components/schemas/AuthStatus'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AuthStatus'
     NssaaStatusRm:
       anyOf:
-        - $ref: '#/components/schemas/NssaaStatus'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NssaaStatus'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     TnapId:
       type: object
       properties:
@@ -1746,8 +1746,8 @@ components:
           $ref: '#/components/schemas/Bytes'
     TnapIdRm:
       anyOf:
-        - $ref: '#/components/schemas/TnapId'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/TnapId'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     TwapId:
       type: object
       required:
@@ -1758,11 +1758,11 @@ components:
         bssId:
           type: string
         civicAddress:
-          $ref: '#/components/schemas/Bytes'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Bytes'
     TwapIdRm:
       anyOf:
-        - $ref: '#/components/schemas/TwapId'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/TwapId'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     LineType:
       anyOf:
       - type: string
@@ -1780,8 +1780,8 @@ components:
         - PON: Identifies a PON line
     LineTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/LineType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/LineType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
 
     SnssaiExtension:
       description: Extensions to the Snssai data type
@@ -1812,8 +1812,8 @@ components:
 #
     ExtSnssai:
       allOf:
-        - $ref: '#/components/schemas/Snssai'
-        - $ref: '#/components/schemas/SnssaiExtension'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Snssai'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/SnssaiExtension'
 
 #
 # Data Types related to 5G QoS as defined in clause 5.5
@@ -1924,8 +1924,8 @@ components:
       $ref: '#/components/schemas/Bytes'
     RgWirelineCharacteristicsRm:
       anyOf:
-        - $ref: '#/components/schemas/RgWirelineCharacteristics'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/RgWirelineCharacteristics'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     ExtMaxDataBurstVol:
       type: integer
       minimum: 4096
@@ -1967,8 +1967,8 @@ components:
         - type: string
     PreemptionVulnerabilityRm:
       anyOf:
-        - $ref: '#/components/schemas/PreemptionVulnerability'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/PreemptionVulnerability'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     ReflectiveQoSAttribute:
       anyOf:
         - type: string
@@ -1978,8 +1978,8 @@ components:
         - type: string
     ReflectiveQoSAttributeRm:
       anyOf:
-        - $ref: '#/components/schemas/ReflectiveQoSAttribute'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/ReflectiveQoSAttribute'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     NotificationControl:
       anyOf:
         - type: string
@@ -1989,8 +1989,8 @@ components:
         - type: string
     NotificationControlRm:
       anyOf:
-        - $ref: '#/components/schemas/NotificationControl'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NotificationControl'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     QosResourceType:
       anyOf:
         - type: string
@@ -2001,8 +2001,8 @@ components:
         - type: string
     QosResourceTypeRm:
       anyOf:
-        - $ref: '#/components/schemas/QosResourceType'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/QosResourceType'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     AdditionalQosFlowInfo:
       anyOf:
         - anyOf:
@@ -2010,7 +2010,7 @@ components:
               enum:
                 - MORE_LIKELY
             - type: string
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
 #
 
 #
@@ -2021,56 +2021,56 @@ components:
       type: object
       properties:
         priorityLevel:
-          $ref: '#/components/schemas/ArpPriorityLevel'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ArpPriorityLevel'
         preemptCap:
-          $ref: '#/components/schemas/PreemptionCapability'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PreemptionCapability'
         preemptVuln:
-          $ref: '#/components/schemas/PreemptionVulnerability'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PreemptionVulnerability'
       required:
         - priorityLevel
         - preemptCap
         - preemptVuln
     ArpRm:
       anyOf:
-        - $ref: '#/components/schemas/Arp'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Arp'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     Ambr:
       type: object
       properties:
         uplink:
-          $ref: '#/components/schemas/BitRate'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/BitRate'
         downlink:
-          $ref: '#/components/schemas/BitRate'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/BitRate'
       required:
         - uplink
         - downlink
     AmbrRm:
       anyOf:
-        - $ref: '#/components/schemas/Ambr'
-        - $ref: '#/components/schemas/NullValue'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/Ambr'
+        - $ref: 'TS29571_CommonData.yaml#/components/schemas/NullValue'
     Dynamic5Qi:
       type: object
       properties:
         resourceType:
-          $ref: '#/components/schemas/QosResourceType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/QosResourceType'
         priorityLevel:
-          $ref: '#/components/schemas/5QiPriorityLevel'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/5QiPriorityLevel'
         packetDelayBudget:
-          $ref: '#/components/schemas/PacketDelBudget'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PacketDelBudget'
         packetErrRate:
-          $ref: '#/components/schemas/PacketErrRate'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PacketErrRate'
         averWindow:
-          $ref: '#/components/schemas/AverWindow'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AverWindow'
         maxDataBurstVol:
-          $ref: '#/components/schemas/MaxDataBurstVol'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/MaxDataBurstVol'
         extMaxDataBurstVol:
-          $ref: '#/components/schemas/ExtMaxDataBurstVol'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ExtMaxDataBurstVol'
         extPacketDelBudget:
-          $ref: '#/components/schemas/ExtPacketDelBudget'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ExtPacketDelBudget'
         cnPacketDelayBudgetDl:
-          $ref: '#/components/schemas/ExtPacketDelBudget'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ExtPacketDelBudget'
         cnPacketDelayBudgetUl:
-          $ref: '#/components/schemas/ExtPacketDelBudget'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ExtPacketDelBudget'
       required:
         - resourceType
         - priorityLevel
@@ -2080,17 +2080,17 @@ components:
       type: object
       properties:
         priorityLevel:
-          $ref: '#/components/schemas/5QiPriorityLevel'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/5QiPriorityLevel'
         averWindow:
-          $ref: '#/components/schemas/AverWindow'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AverWindow'
         maxDataBurstVol:
-          $ref: '#/components/schemas/MaxDataBurstVol'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/MaxDataBurstVol'
         extMaxDataBurstVol:
-          $ref: '#/components/schemas/ExtMaxDataBurstVol'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ExtMaxDataBurstVol'
         cnPacketDelayBudgetDl:
-          $ref: '#/components/schemas/ExtPacketDelBudget'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ExtPacketDelBudget'
         cnPacketDelayBudgetUl:
-          $ref: '#/components/schemas/ExtPacketDelBudget'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ExtPacketDelBudget'
       minProperties: 0
 
 #
@@ -2372,9 +2372,9 @@ components:
           type: string
           pattern: '^[A-Fa-f0-9]+$'
         collectionEntityIpv4Addr:
-          $ref: '#/components/schemas/Ipv4Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv4Addr'
         collectionEntityIpv6Addr:
-          $ref: '#/components/schemas/Ipv6Addr'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Ipv6Addr'
         interfaceList:
           type: string
           pattern: '^[A-Fa-f0-9]+$'
@@ -2389,36 +2389,36 @@ components:
         - jobType
       properties:
         jobType:
-          $ref: '#/components/schemas/JobType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/JobType'
         reportType:
-          $ref: '#/components/schemas/ReportTypeMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ReportTypeMdt'
         areaScope:
-          $ref: '#/components/schemas/AreaScope'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/AreaScope'
         measurementLteList:
           type: array
           items:
-            $ref: '#/components/schemas/MeasurementLteForMdt'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/MeasurementLteForMdt'
         measurementNrList:
           type: array
           items:
-            $ref: '#/components/schemas/MeasurementNrForMdt'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/MeasurementNrForMdt'
           minItems: 1
         sensorMeasurementList:
           type: array
           items:
-            $ref: '#/components/schemas/SensorMeasurement'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/SensorMeasurement'
           minItems: 1
         reportingTriggerList:
           type: array
           items:
-            $ref: '#/components/schemas/ReportingTrigger'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ReportingTrigger'
           minItems: 1
         reportInterval:
-          $ref: '#/components/schemas/ReportIntervalMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ReportIntervalMdt'
         reportIntervalNr:
-          $ref: '#/components/schemas/ReportIntervalNrMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ReportIntervalNrMdt'
         reportAmount:
-          $ref: '#/components/schemas/ReportAmountMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ReportAmountMdt'
         eventThresholdRsrp:
           type: integer
           minimum: 0
@@ -2438,45 +2438,45 @@ components:
         eventList:
           type: array
           items:
-            $ref: '#/components/schemas/EventForMdt'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/EventForMdt'
           minItems: 1
         loggingInterval:
-          $ref: '#/components/schemas/LoggingIntervalMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/LoggingIntervalMdt'
         loggingIntervalNr:
-          $ref: '#/components/schemas/LoggingIntervalNrMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/LoggingIntervalNrMdt'
         loggingDuration:
-          $ref: '#/components/schemas/LoggingDurationMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/LoggingDurationMdt'
         loggingDurationNr:
-          $ref: '#/components/schemas/LoggingDurationNrMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/LoggingDurationNrMdt'
         positioningMethod:
-          $ref: '#/components/schemas/PositioningMethodMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/PositioningMethodMdt'
         addPositioningMethodList:
           type: array
           items:
-            $ref: '#/components/schemas/PositioningMethodMdt'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/PositioningMethodMdt'
           minItems: 1
         collectionPeriodRmmLte:
-          $ref: '#/components/schemas/CollectionPeriodRmmLteMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/CollectionPeriodRmmLteMdt'
         collectionPeriodRmmNr:
-          $ref: '#/components/schemas/CollectionPeriodRmmNrMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/CollectionPeriodRmmNrMdt'
         measurementPeriodLte:
-          $ref: '#/components/schemas/MeasurementPeriodLteMdt'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/MeasurementPeriodLteMdt'
         mdtAllowedPlmnIdList:
           type: array
           items:
-            $ref: '#/components/schemas/PlmnId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/PlmnId'
           minItems: 1
           maxItems: 16
         mbsfnAreaList:
           type: array
           items:
-            $ref: '#/components/schemas/MbsfnArea'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/MbsfnArea'
           minItems: 1
           maxItems: 8
         interFreqTargetList:
           type: array
           items:
-            $ref: '#/components/schemas/InterFreqTargetInfo'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/InterFreqTargetInfo'
           minItems: 1
           maxItems: 8
     AreaScope:
@@ -2485,22 +2485,22 @@ components:
         eutraCellIdList:
           type: array
           items:
-            $ref: '#/components/schemas/EutraCellId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/EutraCellId'
           minItems: 1
         nrCellIdList:
           type: array
           items:
-            $ref: '#/components/schemas/NrCellId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/NrCellId'
           minItems: 1
         tacList:
           type: array
           items:
-            $ref: '#/components/schemas/Tac'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Tac'
           minItems: 1
         tacInfoPerPlmn:
           type: object
           additionalProperties:
-            $ref: '#/components/schemas/TacInfo'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/TacInfo'
           minProperties: 1
           description: A map (list of key-value pairs) where PlmnId serves as key
     TacInfo:
@@ -2511,7 +2511,7 @@ components:
         tacList:
           type: array
           items:
-            $ref: '#/components/schemas/Tac'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/Tac'
           minItems: 1
     MbsfnArea:
       type: object
@@ -2531,11 +2531,11 @@ components:
       type: object
       properties:
         dlCarrierFreq:
-          $ref: '#/components/schemas/ArfcnValueNR'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/ArfcnValueNR'
         cellIdList:
           type: array
           items:
-            $ref: '#/components/schemas/PhysCellId'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/PhysCellId'
           minItems: 1
           maxItems: 32
 
@@ -2576,7 +2576,7 @@ components:
       type: object
       properties:
         roamingOdb:
-          $ref: '#/components/schemas/RoamingOdb'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/RoamingOdb'
 
 #
 # Data Types related to Charging as defined in clause 5.8
@@ -2587,16 +2587,16 @@ components:
 #
 #
     ChargingId:
-      $ref: '#/components/schemas/Uint32'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Uint32'
 
     ApplicationChargingId:
       type: string
 
     RatingGroup:
-      $ref: '#/components/schemas/Uint32'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Uint32'
 
     ServiceId:
-      $ref: '#/components/schemas/Uint32'
+      $ref: 'TS29571_CommonData.yaml#/components/schemas/Uint32'
 
 
 #
@@ -2614,7 +2614,7 @@ components:
         qosFlowsUsageData:
           type: array
           items:
-            $ref: '#/components/schemas/QosFlowUsageReport'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/QosFlowUsageReport'
           minItems: 1
       required:
         - secondaryRatType
@@ -2624,15 +2624,15 @@ components:
       type: object
       properties:
         qfi:
-          $ref: '#/components/schemas/Qfi'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Qfi'
         startTimeStamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         endTimeStamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         downlinkVolume:
-          $ref: '#/components/schemas/Int64'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Int64'
         uplinkVolume:
-          $ref: '#/components/schemas/Int64'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Int64'
       required:
         - qfi
         - startTimeStamp
@@ -2644,16 +2644,16 @@ components:
       type: object
       properties:
         secondaryRatType:
-          $ref: '#/components/schemas/RatType'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/RatType'
         qosFlowsUsageData:
           type: array
           items:
-            $ref: '#/components/schemas/QosFlowUsageReport'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/QosFlowUsageReport'
           minItems: 1
         pduSessionUsageData:
           type: array
           items:
-            $ref: '#/components/schemas/VolumeTimedReport'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/VolumeTimedReport'
           minItems: 1
       required:
         - secondaryRatType
@@ -2662,13 +2662,13 @@ components:
       type: object
       properties:
         startTimeStamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         endTimeStamp:
-          $ref: '#/components/schemas/DateTime'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/DateTime'
         downlinkVolume:
-          $ref: '#/components/schemas/Int64'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Int64'
         uplinkVolume:
-          $ref: '#/components/schemas/Int64'
+          $ref: 'TS29571_CommonData.yaml#/components/schemas/Int64'
       required:
         - startTimeStamp
         - endTimeStamp
@@ -2686,25 +2686,25 @@ components:
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '401':
       description: Unauthorized
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '403':
       description: Forbidden
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '404':
       description: Not Found
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '405':
       description: Method Not Allowed
     '408':
@@ -2712,7 +2712,7 @@ components:
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '406':
       description: 406 Not Acceptable
     '409':
@@ -2720,72 +2720,72 @@ components:
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '410':
       description: Gone
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '411':
       description: Length Required
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '412':
       description: Precondition Failed
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '413':
       description: Payload Too Large
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '414':
       description: URI Too Long
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '415':
       description: Unsupported Media Type
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '429':
       description: Too Many Requests
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '500':
       description: Internal Server Error
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '501':
       description: Not Implemented
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '503':
       description: Service Unavailable
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     '504':
       description: Gateway Timeout
       content:
         application/problem+json:
           schema:
-            $ref: '#/components/schemas/ProblemDetails'
+            $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     default:
       description: Generic Error
