@@ -127,7 +127,7 @@ The links below will open the Swagger Editor (v3.6.23) and auto-load the OpenAPI
 * [Offline-Only Charging](https://jdegre.github.io/loader.html?yaml=TS32291_Nchf_OfflineOnlyCharging.yaml)
 
 ## Common Data Types
-* [Common Data](https://jdegre.github.io/loader.html?yaml=TS29571_CommonData.yaml)
+* [Common Data](https://editor.swagger.io?url=https://raw.githubusercontent.com/jdegre/5GC_APIs/test/TS29571_CommonData.yaml)
 
 ## SEPP N32 APIs
 * [Handshake (N32-c)](https://jdegre.github.io/loader.html?yaml=TS29573_N32_Handshake.yaml)
